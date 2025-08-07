@@ -1,0 +1,87 @@
+News site: dynamic website
+
+Dynamic
+Authentication && authorization
+pagination
+SMTP module
+reset passwod link get you mail
+Rest API concept
+category wise news showing
+Role based user access
+File validation and error handling
+
+1. cms software
+2. admin panel and user panel
+3. 	category wise news
+	auther news
+	search news
+4. session
+5. login logout
+
+*Data Dictionary
+Tables and Attributes:
+
+1. category
+	category_id (Primary Key)
+	category_name
+	post
+2. post
+post_id (Primary Key)
+title
+description
+category (Foreign Key: Refers to category.category_id)
+post_date
+author (Foreign Key: Refers to user.user_id)
+post_img
+
+3.settings
+id (Primary Key)
+websitename
+logo
+footerdesc
+
+4. user
+user_id (Primary Key)
+first_name
+last_name
+username
+password
+role
+resettoken
+resettokenexpired
+
+Relationships:
+One-to-Many:
+A category can have multiple post entries.
+A user can author multiple post entries.
+
+coding start : 
+
+/admin/
+1. add-user.php redirect thase user.php
+2. edit user.php redirect update_user.php 
+3. delete-user.php
+4. pagination concept on users.php
+5. admin/index.php if login success the redirect post.php
+6. logout.php
+7. add_post.php redirect save post.php and show post.php
+8. update-post.php & save-update_post.php && redirect post.php
+9. delete-post.php and redirect post.php
+10. news-site/index.php 
+	click perticuler post and open single post (single.php)
+11. news-site/header.php navbar edit
+12. news-site/category.php  -same code as index page change query only and get  throught cat_id
+13. index page upar koi category ma click karso to perticuler category open thase 
+14. news-site/author.php same as category page
+15. news-site/search.php same as author.php page
+16. news-site/sidebar.php same as index page code
+17. admin/setting.php use logo and footer changing dynamicly
+18. save-setting.php  same code as save-update-post.php
+19. news-site/hearder.php change name header all category, user and all wise SEO wise.
+20. forget password & get link throught reset_pass.php
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+username : krunal@gmail.com
+password : krunal@123
+
+1. add-user. php
+	add user and get re direct and show user users.php
+
+2. users.php
+	show all users  and also insert, update, delete
+
+3. update-user.php
+	user information updated and all changis show 
+
+4. delete-user.php
+	delete user and redirect to user.php page 
+
